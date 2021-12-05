@@ -59,6 +59,8 @@ public final class AuthInfo implements AutoCloseable {
         return uuid;
     }
 
+    public void setUuid(UUID uuid) {this.uuid = uuid;}
+
     public String getAccessToken() {
         return accessToken;
     }
