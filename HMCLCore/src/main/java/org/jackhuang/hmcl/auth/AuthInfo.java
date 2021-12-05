@@ -27,9 +27,8 @@ import java.util.UUID;
  */
 @Immutable
 public final class AuthInfo implements AutoCloseable {
-
     private String username;
-    private final UUID uuid;
+    private UUID uuid;
     private final String accessToken;
     private final String userProperties;
     private final Arguments arguments;
