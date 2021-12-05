@@ -23,13 +23,12 @@ import org.jackhuang.hmcl.util.Immutable;
 import java.util.UUID;
 
 /**
- *
  * @author huangyuhui
  */
 @Immutable
 public final class AuthInfo implements AutoCloseable {
 
-    private final String username;
+    private String username;
     private final UUID uuid;
     private final String accessToken;
     private final String userProperties;
@@ -51,6 +50,10 @@ public final class AuthInfo implements AutoCloseable {
 
     public String getUsername() {
         return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public UUID getUUID() {

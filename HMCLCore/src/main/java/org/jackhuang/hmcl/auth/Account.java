@@ -69,6 +69,7 @@ public abstract class Account implements Observable {
     public abstract Map<Object, Object> toStorage();
 
     public void clearCache() {
+
     }
 
     private ObservableHelper helper = new ObservableHelper(this);
